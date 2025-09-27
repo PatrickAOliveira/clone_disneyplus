@@ -1,6 +1,8 @@
 @use "hero.scss";
 @use "var.scss";
 @use "reset.scss";
+@use "shows.scss";
+@use "plans.scss";
 
 @font-face {
     font-family: Avenir;
@@ -16,7 +18,6 @@
 
 body {
     background-color: var.$corDeFundo;
-    font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
@@ -58,4 +59,19 @@ body {
     @include text(18px);
     color: var.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: var.$corTextoSecundario;
+    background-color: var.$corBotao;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
 }
